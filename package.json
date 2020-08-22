@@ -1,0 +1,19 @@
+{
+  "name": "taylorfoxx-dev",
+  "version": "1.0.0",
+  "description": "Taylor Foxx Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxxtay/taylorfoxx-dev.git"
+  },
+  "author": "Taylor Foxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foxxtay/taylorfoxx-dev/issues"
+  },
+  "homepage": "https://github.com/foxxtay/taylorfoxx-dev#readme"
+}
