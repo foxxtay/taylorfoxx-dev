@@ -53,10 +53,10 @@
 				a {
 					color: #FEFEFE;
 					text-decoration: none;
-				}
 
-				&.active {
-					text-decoration: underline;
+					&.active {
+						text-decoration: underline;
+					}
 				}
 
 				&:last-of-type {
@@ -64,5 +64,15 @@
 				}
 			}
 		}
+	}
+}
+
+.About {
+	.Header {
+		a.logo-container {
+			display: none;
+		}
+
+		display: block;
 	}
 }

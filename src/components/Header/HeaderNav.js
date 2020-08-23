@@ -5,7 +5,7 @@ import NavItem from './NavItem';
 const links = [
 	{
 		title: "About",
-		slug: "about"
+		slug: "/"
 	},
 	{
 		title: "Portfolio",

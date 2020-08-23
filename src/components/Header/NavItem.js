@@ -1,23 +1,12 @@
 import React, { Component } from "react";
 import {hot} from "react-hot-loader";
+import {NavLink} from "react-router-dom";
 
 class NavItem extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {active: false};
-		this.setActive = this.setActive.bind(this);
-	}
-
-	setActive() {
-		this.setState({
-			active: true
-		});
-	}
-
 	render() {
 		return(
-			<li className={this.state.active ? "NavItem active" : "NavItem" }>
-				<a href={this.props.slug} onClick={this.setActive}>{this.props.title}</a>
+			<li className="NavItem">
+				<NavLink to={this.props.slug} activeClassName="active" exact>{this.props.title}</NavLink>
 			</li>
 		);
 	}
