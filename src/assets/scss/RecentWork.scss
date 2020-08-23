@@ -1,0 +1,78 @@
+.RecentWork {
+	padding: 60px 5%;
+
+	@media #{$break-tablet} {
+		padding: 75px 5%;
+	}
+
+	@media #{$break-desktop} {
+		padding: 100px 10%;
+	}
+
+	h1 {
+
+		margin-bottom: 24px;
+		text-align: center;
+
+		@media #{$break-tablet} {
+			margin-bottom: 35px;
+			text-align: left;
+		}
+
+		@media #{$break-desktop} {
+			margin-bottom: 48px;
+		}
+	}
+
+	.portfolio-links {
+		
+		@media #{$break-tablet} {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		div {
+			width: 100%;
+			max-width: 350px;
+			margin: 0 auto 45px;
+
+			@media #{$break-tablet} {
+				width: 45%;
+				max-width: unset;
+				margin: 0 0 50px;
+			}
+
+			@media #{$break-desktop} {
+				margin: 0 0 65px;
+			}
+
+			a {
+				width: 100%;
+				overflow: hidden;
+				display: block;
+
+				img {
+					width: 100%;
+					display: block;
+					transition: all 1.5s;
+				}
+
+			}
+
+			&.last {
+				margin-bottom: 0;
+			}
+
+			&.focus {
+				a {
+
+					img {
+						transform: scale(1.05);
+					}
+
+				}
+			}
+		}
+	}
+}
