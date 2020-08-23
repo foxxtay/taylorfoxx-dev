@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "Qualy";
+	src: '../fonts/Qualy.otf';
+}
+
+@font-face {
+	font-family: "Barlow Condensed";
+	src: '../fonts/BarlowCondensed-Regular.otf';
+}
+
+@font-face {
+	font-family: "Barlow";
+	src: '../fonts/Barlow-Regular.otf';
+}
+
+html {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Qualy', 'Arial', sans-serif;
+	font-size: 40px;
+	line-height: 45px;
+	color: #333;
+
+    @media #{$break-tablet} {
+		font-size: 52px;
+		line-height: 57px;
+	}
+
+	@media #{$break-desktop} {
+		font-size: 65px;
+		line-height: 70px;
+	}
+}
+
+h2, li {
+	font-family: 'Barlow Condensed', 'Arial', sans-serif;
+	font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+    @media #{$break-tablet} {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	@media #{$break-desktop} {
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+}
+
+p {
+	font-family: 'Barlow', 'Arial', sans-serif;
+	font-size: 16px;
+    color: #333;
+    line-height: 20px;
+
+    @media #{$break-tablet} {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	@media #{$break-desktop} {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+a {
+	color: #333;
+}
+
+.wow {
+   visibility: hidden;
+}

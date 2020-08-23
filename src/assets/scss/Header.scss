@@ -1,0 +1,68 @@
+.Header {
+	background-color: #333;
+
+	@media #{$break-tablet} {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	a.logo-container {
+
+		display: none;
+
+		@media #{$break-tablet} {
+			display: block;
+			padding-left: 5%;
+		}
+
+		@media #{$break-desktop} {
+			padding-left: 10%;
+		}
+
+		img {
+			width: 40px;
+		}
+
+	}
+
+	.HeaderNav {
+
+		padding: 25px 5%;
+
+		@media #{$break-desktop} {
+			padding: 25px 10%;
+		}
+
+		ul {
+
+			display: flex;
+			justify-content: center;
+
+			@media #{$break-tablet} {
+				justify-content: flex-end;
+			}
+
+			.NavItem {
+				display: inline-block;
+				color: #FEFEFE;
+				text-transform: uppercase;
+				margin-right: 25px;
+				margin-bottom: 0;
+
+				a {
+					color: #FEFEFE;
+					text-decoration: none;
+				}
+
+				&.active {
+					text-decoration: underline;
+				}
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

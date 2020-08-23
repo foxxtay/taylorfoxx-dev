@@ -1,0 +1,53 @@
+.HeroAbout {
+	background: #333;
+	display: flex;
+	justify-content: space-around;
+	padding: 60px 5%;
+	flex-direction: column-reverse;
+	align-items: center;
+
+	@media #{$break-tablet} {
+		padding: 75px 5%;
+		flex-direction: row;
+	}
+
+	@media #{$break-desktop} {
+		padding: 100px 10%;
+	}
+
+	h1 {
+		color: #fefefe;
+		width: 350px;
+		transition: color .5s;
+
+		@media #{$break-tablet} {
+			width: 450px;
+		}
+
+		@media #{$break-desktop} {
+			width: 550px;
+		}
+
+		span {
+			transition: color .5s;
+		}
+
+	}
+
+	.logo {
+		margin: 0 0 24px;
+		max-width: 200px;
+
+		@media #{$break-tablet} {
+			width: 25%;
+			max-width: unset;
+			
+		}
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+}
