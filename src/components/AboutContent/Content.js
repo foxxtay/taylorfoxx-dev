@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {hot} from "react-hot-loader";
+import { hot } from "react-hot-loader";
 import logo from '../../assets/img/taylor-foxx-icon.svg';
 
 class Content extends Component {

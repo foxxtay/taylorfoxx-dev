@@ -1,24 +1,10 @@
 import React, { Component } from "react";
-import {hot} from "react-hot-loader";
+import { hot } from "react-hot-loader";
 import NavItem from './NavItem';
-
-const links = [
-	{
-		title: "About",
-		slug: "/"
-	},
-	{
-		title: "Portfolio",
-		slug: "portfolio"
-	},
-	{
-		title: "Contact",
-		slug: "contact"
-	},
-];
+import { links } from '../../data/navLinks';
 
 const navItems = links.map((links) =>
-	<NavItem title={links.title} slug={links.slug} key={links.slug} />
+	<NavItem title={ links.title } slug={ links.slug } key={ links.title } exact={ links.exact } />
 );
 
 class HeaderNav extends Component {
@@ -26,7 +12,7 @@ class HeaderNav extends Component {
 		return(
 			<nav className="HeaderNav wow fadeInRight">
 				<ul>
-					{navItems}
+					{ navItems }
 				</ul>
 			</nav>
 		);

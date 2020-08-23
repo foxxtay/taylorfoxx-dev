@@ -1,4 +1,4 @@
-.HeroAbout {
+.AboutHero {
 	background: #333;
 	display: flex;
 	justify-content: space-around;
@@ -28,8 +28,8 @@
 			width: 550px;
 		}
 
-		span {
-			transition: color .5s;
+		&.highlight {
+			color: black;
 		}
 
 	}

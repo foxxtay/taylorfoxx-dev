@@ -1,0 +1,170 @@
+.PortfolioSingle {
+	.portfolio-content{
+		padding: 60px 5%;
+
+		@media #{$break-tablet} {
+			padding: 75px 5%;
+		}
+
+		@media #{$break-desktop} {
+			padding: 100px 10%;
+		}
+
+		h1, h2 {
+			max-width: 325px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 24px;
+
+			@media #{$break-tablet} {
+				max-width: unset;
+				text-align: left;
+				margin: 0 0 32px;
+			}
+
+			@media #{$break-desktop} {
+				margin: 0 0 45px;
+			}
+		}
+
+		h2 {
+
+			margin-bottom: 36px;
+
+			@media #{$break-tablet} {
+				max-width: 400px;
+				text-align: left;
+				margin: 0 0 48px;
+			}
+
+			@media #{$break-desktop} {
+				max-width: 425px;
+				margin: 0 0 60px;
+			}
+
+			a {
+				color: #333;
+			}
+		}
+
+		.back-button {
+			font-size: 10px;
+			margin-bottom: 18px;
+		    
+		    @media #{$break-tablet} {
+				font-size: 11px;
+				margin: 0 0 24px;
+			}
+
+			@media #{$break-desktop} {
+				font-size: 12px;
+				margin: 0 0 30px;
+			}
+		}
+
+		.header-shot {
+
+			width: 100%;
+			max-width: 325px;
+			margin: 0 auto 36px;
+
+			@media #{$break-tablet} {
+				max-width: unset;
+				margin: 0 0 48px;
+			}
+
+			@media #{$break-desktop} {
+				margin: 0 0 60px;
+			}
+
+			div {
+
+				width: 100%;
+
+				img {
+					width: 100%;
+					display: block;
+				}
+
+			}
+
+			&.split {
+
+				@media #{$break-tablet} {
+					display: flex;
+					flex-direction: row;
+				}
+
+				div {
+
+					@media #{$break-tablet} {
+						width: 50%;
+					}
+				}
+			}
+		}
+
+		.project-content {
+
+			@media #{$break-tablet} {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.content {
+
+				width: 100%;
+				max-width: 350px;
+				margin: 0 auto 18px;
+
+				@media #{$break-tablet} {
+					width: 50%;
+					max-width: unset;
+					margin: 0;
+				}
+
+				h2 {
+					margin-bottom: 18px;
+
+				    @media #{$break-tablet} {
+						margin-bottom: 20px;
+					}
+
+					@media #{$break-desktop} {
+						margin-bottom: 24px;
+					}
+				}
+			}
+
+			iframe {
+				display: none;
+
+				@media #{$break-desktop} {
+					display: initial;
+				}
+			}
+
+			.project-img {
+
+				width: 100%;
+				max-width: 350px;
+				margin: 0 auto 18px;
+
+				@media #{$break-tablet} {
+					width: 45%;
+					max-width: unset;
+					margin: 0;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

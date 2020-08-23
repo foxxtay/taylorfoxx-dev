@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {hot} from "react-hot-loader";
+import { hot } from "react-hot-loader";
 import Form from './ContactForm';
 
 class ContactContent extends Component {
