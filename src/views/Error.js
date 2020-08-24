@@ -4,15 +4,16 @@ import { WOW } from 'wowjs';
 
 class Error extends Component {
 	componentDidMount() {
-		this.props.updateAppClass('Error');
 		const wow = new WOW({ live: true });
 		wow.init();
 	}
 
 	render() {
 		return(
-			<div>
-				<h1>Where are you going?</h1>
+			<div className="Error">
+				<h1>Did the redirect break again?</h1>
+				<p>You're not supposed to see this page, but something messed up! Use any of those links above to get back on track.</p><br />
+				<p>PS, thanks for checking out my website! It really means a lot to me, so feel free to send me a quick message and say hello.</p>
 			</div>
 		);
 	}

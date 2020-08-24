@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import "./App.scss";
+import ReactGa from 'react-ga';
 
 import Header from "./components/Header/Header";
 import About from "./views/About";
@@ -22,6 +23,9 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { appClass: 'About' };
+
+		ReactGa.initialize('UA-138021131-1');
+		ReactGa.pageview(window.location.pathname + window.location.search);
 	}
 
 	updateAppClass(className) {

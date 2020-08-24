@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
-import Hero from '../components/HeroAbout/HeroAbout';
+import Hero from '../components/AboutHero/AboutHero';
 import Content from '../components/ContactContent/ContactContent';
 import { WOW } from 'wowjs';
 

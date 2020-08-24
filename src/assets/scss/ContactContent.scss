@@ -1,0 +1,149 @@
+.ContactContent {
+	padding: 60px 5%;
+
+	@media #{$break-tablet} {
+		padding: 75px 5%;
+	}
+
+	@media #{$break-desktop} {
+		padding: 100px 10%;
+	}
+
+	h1, h2 {
+		max-width: 325px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h1 {
+		margin-bottom: 24px;
+
+		@media #{$break-tablet} {
+			max-width: 400px;
+			text-align: left;
+			margin: 0 0 32px;
+		}
+
+		@media #{$break-desktop} {
+			max-width: 500px;
+			margin: 0 0 45px;
+		}
+	}
+
+	h2 {
+
+		margin-bottom: 36px;
+
+		@media #{$break-tablet} {
+			max-width: 400px;
+			text-align: left;
+			margin: 0 0 48px;
+		}
+
+		@media #{$break-desktop} {
+			max-width: 425px;
+			margin: 0 0 60px;
+		}
+
+		a {
+			color: #333;
+		}
+	}
+
+	.contact-form {
+		max-width: 325px;
+		margin: 0 auto;
+
+		@media #{$break-tablet} {
+			max-width: 800px;
+			margin: 0;
+		}
+
+		form {
+
+			.half-container {
+
+				@media #{$break-tablet} {
+					display: flex;
+					justify-content: space-between;
+				}
+
+				.half-input {
+
+					width: 100%;
+
+					@media #{$break-tablet} {
+						width: 45%;
+					}
+
+					input[type="text"], input[type="email"], input[type="tel"] {
+						display: block;
+						width: 100%;
+						padding: 10px 15px;
+						box-sizing: border-box;
+						margin: 0 0 5px;
+						font-family: 'Barlow Condensed', 'Arial', sans-serif;
+						font-size: 16px;
+					    color: #333;
+					    border: 1px solid #333;
+
+					    @media #{$break-tablet} {
+					    	font-size: 18px;
+					    }
+
+					    @media #{$break-desktop} {
+					    	font-size: 20px;
+					    }
+					}
+
+				}
+			}
+
+			textarea {
+				display: block;
+			    width: 100%;
+			    padding: 10px 15px;
+			    box-sizing: border-box;
+			    height: 75px;
+			    margin: 0 0 5px;
+			    font-family: 'Barlow Condensed', 'Arial', sans-serif;
+				font-size: 16px;
+			    color: #333;
+			    border: 1px solid #333;
+
+			    @media #{$break-tablet} {
+			    	font-size: 18px;
+			    }
+
+			    @media #{$break-desktop} {
+			    	font-size: 20px;
+			    }
+			}
+
+			.label {
+				text-align: left;
+			}
+
+			input[type="submit"] {
+				font-family: 'Barlow Condensed', 'Arial', sans-serif;
+				font-size: 16px;
+			    color: #FEFEFE;
+			    background-color: #333;
+			    text-transform: uppercase;
+			    border: none;
+			    padding: 16px 40px ;
+
+			    @media #{$break-tablet} {
+			    	font-size: 18px;
+			    	padding: 20px 45px;
+			    }
+
+			    @media #{$break-desktop} {
+			    	font-size: 20px;
+			    	padding: 24px 50px;
+			    }
+			}
+
+		}
+	}
+}

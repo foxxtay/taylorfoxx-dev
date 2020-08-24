@@ -19,20 +19,22 @@
   },
   "homepage": "https://github.com/foxxtay/taylorfoxx-dev#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.2",
-    "css-loader": "^1.0.0",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^1.0.1",
     "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2",
     "react-router-dom": "^5.2.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
-    "style-loader": "^0.23.0",
+    "style-loader": "^0.23.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
@@ -40,6 +42,7 @@
     "wowjs": "^1.1.3"
   },
   "dependencies": {
-    "react-hot-loader": "^4.3.11"
+    "emailjs-com": "^2.6.3",
+    "react-hot-loader": "^4.12.21"
   }
 }
