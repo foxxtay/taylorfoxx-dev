@@ -30,7 +30,7 @@ module.exports = {
 	resolve: { extensions: ["*", ".js", ".jsx"] },
 	output: {
 		path: path.resolve(__dirname, "dist/"),
-		publicPath: "/dist/",
+		publicPath: "",
 		filename: "bundle.js"
 	},
 	devServer: {
@@ -43,7 +43,8 @@ module.exports = {
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-		    favicon: "./src/assets/img/favicon.png"
+		    favicon: "./src/assets/img/favicon.png",
+		    template: 'public/index.html'
 		})
 	]
 };
