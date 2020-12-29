@@ -36,7 +36,7 @@ class App extends Component {
 
 	render() {
 		return(
-			<Router>
+			<BrowserRouter>
 				<main className={ this.state.appClass }>
 					<Header />
 					<Switch>
@@ -54,7 +54,7 @@ class App extends Component {
 						<Route component={ Error } />
 					</Switch>
 				</main>
-			</Router>
+			</BrowserRouter>
 		);
 	}
 }
