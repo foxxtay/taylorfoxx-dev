@@ -40,7 +40,7 @@ class App extends Component {
 				<main className={ this.state.appClass }>
 					<Header />
 					<Switch>
-						<Route path='/' render={() => <About updateAppClass={ this.updateAppClass.bind(this) } />} exact />
+						<Route exact path='/' render={() => <About updateAppClass={ this.updateAppClass.bind(this) } />} exact />
 						<Route path="/portfolio" render={() => <Portfolio updateAppClass={ this.updateAppClass.bind(this) } />} exact />
 						<Route path="/portfolio/1111acreativecollective" render={() => <ACreativeCollective updateAppClass={ this.updateAppClass.bind(this) } />} />
 						<Route path="/portfolio/dodapp" render={() => <DODApp updateAppClass={ this.updateAppClass.bind(this) } />} />
