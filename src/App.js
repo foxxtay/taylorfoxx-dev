@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
-import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
+import { Route, Switch, useParams } from "react-router-dom";
 import "./App.scss";
 import ReactGa from 'react-ga';
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 import Header from "./components/Header/Header";
 import About from "./views/About";
@@ -37,26 +36,23 @@ class App extends Component {
 
 	render() {
 		return(
-			<BrowserRouter>
-				<ScrollToTop />
-				<main className={ this.state.appClass }>
-					<Header />
-					<Switch>
-						<Route exact path='/' render={() => <About updateAppClass={ this.updateAppClass.bind(this) } />} exact />
-						<Route path="/portfolio" render={() => <Portfolio updateAppClass={ this.updateAppClass.bind(this) } />} exact />
-						<Route path="/portfolio/1111acreativecollective" render={() => <ACreativeCollective updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/dodapp" render={() => <DODApp updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/hoopaughgradingcompany" render={() => <HoopaughGradingCompany updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/locusapp" render={() => <LocusApp updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/traceychrissalon" render={() => <TraceyChrisSalon updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/wheelhousemedia" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path="/portfolio/seniorshowwebsite" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path='/contact' render={() => <Contact updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route path='/union' render={() => <Union updateAppClass={ this.updateAppClass.bind(this) } />} />
-						<Route component={ Error } />
-					</Switch>
-				</main>
-			</BrowserRouter>
+			<main className={ this.state.appClass }>
+				<Header />
+				<Switch>
+					<Route exact path='/' render={() => <About updateAppClass={ this.updateAppClass.bind(this) } />} exact />
+					<Route path="/portfolio" render={() => <Portfolio updateAppClass={ this.updateAppClass.bind(this) } />} exact />
+					<Route path="/portfolio/1111acreativecollective" render={() => <ACreativeCollective updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/dodapp" render={() => <DODApp updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/hoopaughgradingcompany" render={() => <HoopaughGradingCompany updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/locusapp" render={() => <LocusApp updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/traceychrissalon" render={() => <TraceyChrisSalon updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/wheelhousemedia" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/seniorshowwebsite" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path='/contact' render={() => <Contact updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path='/union' render={() => <Union updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route component={ Error } />
+				</Switch>
+			</main>
 		);
 	}
 }
