@@ -46,8 +46,8 @@ class App extends Component {
 					<Route path="/portfolio/hoopaughgradingcompany" render={() => <HoopaughGradingCompany updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path="/portfolio/locusapp" render={() => <LocusApp updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path="/portfolio/traceychrissalon" render={() => <TraceyChrisSalon updateAppClass={ this.updateAppClass.bind(this) } />} />
-					<Route path="/portfolio/seniorshowwebsite" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
-					<Route path="/portfolio/wheelhousemedia" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/wheelhousemedia" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path="/portfolio/seniorshowwebsite" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/contact' render={() => <Contact updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/union' render={() => <Union updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route component={ Error } />
