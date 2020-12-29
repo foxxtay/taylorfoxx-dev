@@ -3,6 +3,7 @@ import { hot } from "react-hot-loader";
 import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import "./App.scss";
 import ReactGa from 'react-ga';
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 import Header from "./components/Header/Header";
 import About from "./views/About";
@@ -37,6 +38,7 @@ class App extends Component {
 	render() {
 		return(
 			<BrowserRouter>
+				<ScrollToTop />
 				<main className={ this.state.appClass }>
 					<Header />
 					<Switch>
