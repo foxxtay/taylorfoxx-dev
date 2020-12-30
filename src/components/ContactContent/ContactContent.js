@@ -38,7 +38,8 @@ class ContactContent extends Component {
 					<h1>{ this.state.pageHead }</h1>
 					<h2>{ this.state.pageMsg } <a href="mailto:hello@taylorfoxx.dev">hello@taylorfoxx.dev</a>.</h2>
 					<div className={ this.state.emailAttempt ? "contact-form hidden" : "contact-form" }>
-						<form method="post" onSubmit={ this.sendEmail }>
+						<form name="contact" method="post">
+							<input type="hidden" name="contact" value="contact" />
 							<div className="half-container">
 								<div className="half-input">
 									<input type="text" name="user_name" required />

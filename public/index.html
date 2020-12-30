@@ -8,6 +8,15 @@
 	</head>
 
 	<body>
+		<!-- A little help for the Netlify bots if you're not using a SSG -->
+	    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+	    	<input type="text" name="user_name" required />
+	    	<input type="text" name="company_name" />
+	    	<input type="email" name="user_email" required />
+	    	<input type="tel" name="user_phone" />
+	    	<textarea name="message" required></textarea>
+	    </form>
+
 		<div id="root"></div>
 		<noscript>
 			You must enable JavaScript to check out these sick projects.
