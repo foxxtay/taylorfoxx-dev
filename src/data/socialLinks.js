@@ -8,24 +8,28 @@ export const socialLinksData = [
 		title: "dribble",
 		url: "https://dribbble.com/taylorfoxx",
 		src: dribble,
+		alt: "Dribble Icon",
 		delay: "0.25s"
 	},
 	{
 		title: "instagram",
 		url: "https://www.instagram.com/foxx.tay/",
 		src: instagram,
+		alt: "Instagram Icon",
 		delay: "0.5s"
 	},
 	{
 		title: "linkedIn",
 		url: "https://www.linkedin.com/in/william-foxx-747927145/",
 		src: linkedIn,
+		alt: "LinkedIn Icon",
 		delay: "0.75s"
 	},
 	{
 		title: "twitter",
 		url: "https://twitter.com/foxx_tay",
 		src: twitter,
+		alt: "Twitter Icon",
 		delay: "1s"
 	},
 ];

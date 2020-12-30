@@ -4,7 +4,7 @@ import { portfolioData } from '../../data/portfolio';
 import PortfolioLink from './PortfolioLink';
 
 const portfolioLinks = portfolioData.map((portfolio) =>
-	<PortfolioLink url={ portfolio.url } logo={ portfolio.logo } key={ portfolio.title } />
+	<PortfolioLink url={ portfolio.url } logo={ portfolio.logo } logoAlt={ portfolio.logoAlt } key={ portfolio.title } />
 );
 
 class RecentWork extends Component {

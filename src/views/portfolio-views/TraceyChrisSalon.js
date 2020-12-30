@@ -16,17 +16,17 @@ class TraceyChrisSalon extends Component {
 		return(
 			<div className="portfolio-content">
 				<h2 className="back-button"><Link to="/portfolio" className="logo-container wow fadeIn">&lt; back</Link></h2>
-				<h1>TraceyChris Salon</h1>
-				<h2>A salon local to Rock Hill that rides the line of modern and high-end beauty.</h2>
-				<div className="header-shot split">
+				<h1 className="wow fadeIn">TraceyChris Salon</h1>
+				<h2 className="wow fadeIn" data-wow-delay="0.15s">A salon local to Rock Hill that rides the line of modern and high-end beauty.</h2>
+				<div className="header-shot split wow fadeIn" data-wow-delay="0.3s">
 					<div>
-						<img src={ headerLeft } />
+						<img src={ headerLeft } alt="Image of TraceyChris Salon Logos" />
 					</div>
 					<div>
-						<img src={ headerRight } />
+						<img src={ headerRight } alt="Animated image of the TraceyChris Salon Homepage Prototype" />
 					</div>
 				</div>
-				<div className="project-content">
+				<div className="project-content wow fadeIn">
 					<div className="content">
 						<h2>Branding, Website Design, & Development</h2>
 						<p>TraceyChris Salon is all about bringing high quality hair service local to Rock Hill, SC. With their mastery, vision, and hair care system, we began to collaborate on a branding that reflected their vision of bringing high-quality hair treatment to Rock Hill. The logo, simplistic, sleek, and modern, gives what would be your local, ordinary salon branding an edge so clients can know what to expect when they walk in the door.</p><br />

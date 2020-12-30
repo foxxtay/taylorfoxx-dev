@@ -16,17 +16,17 @@ class aCreativeCollective extends Component {
 		return(
 			<div className="portfolio-content">
 				<h2 className="back-button"><Link to="/portfolio" className="logo-container wow fadeIn">&lt; back</Link></h2>
-				<h1>Hoopaugh Grading Company</h1>
-				<h2>A grading company that takes pride in their work and safety prodcedures in delivering a variety of turn-key site work packages.</h2>
-				<div className="header-shot split">
+				<h1 className="wow fadeIn">Hoopaugh Grading Company</h1>
+				<h2 className="wow fadeIn" data-wow-delay="0.15s">A grading company that takes pride in their work and safety prodcedures in delivering a variety of turn-key site work packages.</h2>
+				<div className="header-shot split wow fadeIn" data-wow-delay="0.3s">
 					<div>
-						<img src={ headerLeft } />
+						<img src={ headerLeft } alt="Animated Image of Hoopaugh Grading Company's Homepage" />
 					</div>
 					<div>
-						<img src={ headerRight } />
+						<img src={ headerRight } alt="Image of Hoopaugh Grading Company's Projects Page" />
 					</div>
 				</div>
-				<div className="project-content">
+				<div className="project-content wow fadeIn">
 					<div className="content">
 						<h2>Website Development<br />A <a href="https://www.socialdesign.house/" target="_blank">Social Design House</a> Project<br />Technical Director: Ben Visser<br />Designer: Mckenna Brandon</h2><p>Hoopaugh Grading Company works hard and with the best to deliver specialized turn-key site work packages for any large scale industrial, commercial, and residential needs. When they came to Social Design House for their new website, Technical Director Ben Visser and Designer Mckenna Brandon delivered a clean, responsive website that reflects the core values and practices they take pride in.</p><br />
 						<p>Given a short deadline to fit their needs, we decided to develop the site using the platform Webflow. By using this platform, we were able to deliver them a fully customizable site, with custom Javascript and HTML functionality, in a short timeline. Once the site was pushed live, the client was given access to all of the site's content and features without having to mess with any code.</p><br />

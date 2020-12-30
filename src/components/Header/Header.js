@@ -9,7 +9,7 @@ class Header extends Component {
 		return(
 			<header className="Header">
 				<Link to="/" className="logo-container wow fadeIn">
-					<img src={ logo }/>
+					<img src={ logo } alt="Taylor Foxx Logo" />
 				</Link>
 				<Nav />
 			</header>

@@ -6,7 +6,7 @@ class ContactAside extends Component {
 	render() {
 		return(
 			<a className="SocialItem wow fadeIn" href={ this.props.url } target="_blank" data-wow-delay={ this.props.delay }>
-				<img src={ this.props.src } />
+				<img src={ this.props.src } alt={ this.props.alt } />
 			</a>
 		);
 	}

@@ -5,14 +5,14 @@ import SocialItem from './SocialItem';
 import { socialLinksData } from '../../data/socialLinks';
 
 const socialLinks = socialLinksData.map((links) =>
-	<SocialItem url={ links.url } src={ links.src } delay={ links.delay } key={ links.title } />
+	<SocialItem url={ links.url } src={ links.src } alt={ links.alt } delay={ links.delay } key={ links.title } />
 );
 
 class ContactAside extends Component {
 	render() {
 		return(
 			<div className="ContactAside">
-				<img src={ about } className="wow fadeIn" />
+				<img src={ about } alt="Image of Taylor Foxx" className="wow fadeIn" />
 				<div className="social-links">
 					<h2 className="wow fadeIn">Social</h2>
 					{ socialLinks }

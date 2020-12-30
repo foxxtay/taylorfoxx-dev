@@ -22,7 +22,7 @@ class PortfolioLink extends Component {
 		return(
 			<div className="PortfolioLink wow fadeIn" onMouseOver={ this.portfolioHover } onMouseOut={ this.portfolioReset }>
 				<Link to={ this.props.url }>
-					<img src={ this.props.logo } />
+					<img src={ this.props.logo } alt={ this.props.logoAlt } />
 				</Link>
 			</div>
 		);

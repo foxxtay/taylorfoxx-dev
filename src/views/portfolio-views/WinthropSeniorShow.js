@@ -16,17 +16,17 @@ class TraceyChrisSalon extends Component {
 		return(
 			<div className="portfolio-content">
 				<h2 className="back-button"><Link to="/portfolio" className="logo-container wow fadeIn">&lt; back</Link></h2>
-				<h1>Winthrop Senior Show Website</h1>
-				<h2>A website to showcase the 2019 Winthrop Department of Design portfolio show.</h2>
-				<div className="header-shot split">
+				<h1 className="wow fadeIn">Winthrop Senior Show Website</h1>
+				<h2 className="wow fadeIn" data-wow-delay="0.15s">A website to showcase the 2019 Winthrop Department of Design portfolio show.</h2>
+				<div className="header-shot split wow fadeIn" data-wow-delay="0.3s">
 					<div>
-						<img src={ headerLeft } />
+						<img src={ headerLeft } alt="Animated image of the 2019 Wintrop Senior Show Header with Animated Text" />
 					</div>
 					<div>
-						<img src={ headerRight } />
+						<img src={ headerRight } alt="Image of the 2019 Winthrop Senior Show's Seniors Section on an Old Computer Monitor" />
 					</div>
 				</div>
-				<div className="project-content">
+				<div className="project-content wow fadeIn">
 					<div className="content">
 						<h2>Website Design & Development</h2>
 						<p>For the Department of Design's senior portfolio show, I was tasked to create a website and landing page that both reflected the theme of the show and helped promote what would be featured at the show. Keeping true to our theme, I first designed a simple and clean landing page that included every department that would be included in the show to push our vision of coming together for the first time to host the show.</p><br />

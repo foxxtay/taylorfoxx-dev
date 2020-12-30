@@ -32,7 +32,7 @@ class AboutHero extends Component {
 			<section className="AboutHero">
 				<h1 className={ this.state.highlight ? "wow fadeIn highlight" : "wow fadeIn" }>Hello.<br/>My name is <span onMouseOver={ this.heroHighlight } onMouseOut={ this.heroReset }>Taylor Foxx</span>. I am an <span onMouseOver={ this.heroHighlight } onMouseOut={ this.heroReset }>Interactive Media Designer</span> and <span onMouseOver={ this.heroHighlight } onMouseOut={ this.heroReset }>Developer</span>.</h1>
 				<div className="logo wow fadeIn">
-					<img src={ logo } />
+					<img src={ logo } alt="Taylor Foxx Logo" />
 				</div>
 			</section>
 		);
