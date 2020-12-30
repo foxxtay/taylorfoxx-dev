@@ -50,7 +50,7 @@ class App extends Component {
 					<Route path="/portfolio/wheelhousemedia" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path="/portfolio/seniorshowwebsite" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/contact' render={() => <Contact updateAppClass={ this.updateAppClass.bind(this) } />} />
-					<Route path='/thank-you' render={() => <ThankYou updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path='/thankyou' render={() => <ThankYou updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/union' render={() => <Union updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route component={ Error } />
 				</Switch>
