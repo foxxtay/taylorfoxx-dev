@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
+import { withRouter } from "react-router-dom";
 
 class ContactContent extends Component {
 	constructor(props) {
@@ -75,4 +76,4 @@ class ContactContent extends Component {
 	}
 }
 
-export default hot(module)(ContactContent);
+export default withRouter(hot(module)(ContactContent));
