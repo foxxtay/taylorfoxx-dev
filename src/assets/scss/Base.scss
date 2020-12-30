@@ -1,16 +1,16 @@
 @font-face {
 	font-family: "Qualy";
-	src: local("Qualy"), url("./assets/fonts/Qualy.otf");
+	src: local("Qualy"), url("./assets/fonts/Qualy.otf") format('openttype');
 }
 
 @font-face {
 	font-family: "Barlow Condensed";
-	src: local("Barlow Condensed"), url("./assets/fonts/BarlowCondensed-Regular.otf");
+	src: local("Barlow Condensed"), url("./assets/fonts/BarlowCondensed-Regular.otf") format('openttype');
 }
 
 @font-face {
 	font-family: "Barlow";
-	src: local("Barlow"), url("./assets/fonts/Barlow-Regular.otf");
+	src: local("Barlow"), url("./assets/fonts/Barlow-Regular.otf") format('openttype');
 }
 
 html {
