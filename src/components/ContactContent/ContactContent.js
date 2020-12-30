@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
-import { withRouter } from "react-router-dom";
 
 class ContactContent extends Component {
 	constructor(props) {
@@ -31,11 +30,6 @@ class ContactContent extends Component {
 		});
 	}
 
-	submitForm(e) {
-		e.preventDefault();
-		this.props.history.push('/thank-you');
-	}
-
 	render() {
 		return(
 			<section className="ContactContent">
@@ -43,7 +37,7 @@ class ContactContent extends Component {
 					<h1>{ this.state.pageHead }</h1>
 					<h2>{ this.state.pageMsg } <a href="mailto:hello@taylorfoxx.dev">hello@taylorfoxx.dev</a>.</h2>
 					<div className={ this.state.emailAttempt ? "contact-form hidden" : "contact-form" }>
-						<form name="contact" onSubmit={ this.submitForm.bind(this) }>
+						<form name="contact" method="post" action="/thank-you">
 							<input type="hidden" name="form-name" value="contact" />
 							<div className="half-container">
 								<div className="half-input">
@@ -76,4 +70,4 @@ class ContactContent extends Component {
 	}
 }
 
-export default withRouter(hot(module)(ContactContent));
+export default hot(module)(ContactContent);
