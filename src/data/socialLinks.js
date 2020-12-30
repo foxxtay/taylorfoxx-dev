@@ -1,14 +1,15 @@
 import dribble from './../assets/img/dribbble-logo.svg';
+import github from './../assets/img/github-logo.svg';
 import instagram from './../assets/img/ig-logo.svg';
 import linkedIn from './../assets/img/linkedin-logo.svg';
 import twitter from './../assets/img/twitter-logo.svg';
 
 export const socialLinksData = [
 	{
-		title: "dribble",
-		url: "https://dribbble.com/taylorfoxx",
-		src: dribble,
-		alt: "Dribble Icon",
+		title: "GitHub",
+		url: "https://github.com/foxxtay/",
+		src: github,
+		alt: "GitHub Icon",
 		delay: "0.25s"
 	},
 	{
@@ -27,7 +28,7 @@ export const socialLinksData = [
 	},
 	{
 		title: "twitter",
-		url: "https://twitter.com/foxx_tay",
+		url: "https://twitter.com/foxx_tay/",
 		src: twitter,
 		alt: "Twitter Icon",
 		delay: "1s"
