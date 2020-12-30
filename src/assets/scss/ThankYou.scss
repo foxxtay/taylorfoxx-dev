@@ -1,0 +1,30 @@
+.ThankYouContent {
+	padding: 60px 5%;
+
+	@media #{$break-tablet} {
+		padding: 75px 5%;
+	}
+
+	@media #{$break-desktop} {
+		padding: 100px 10%;
+	}
+
+	h1, p {
+		max-width: 650px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h1 {
+		margin-bottom: 24px;
+
+		@media #{$break-tablet} {
+			max-width: unset;
+			margin: 0 0 32px;
+		}
+
+		@media #{$break-desktop} {
+			margin: 0 0 45px;
+		}
+	}
+}

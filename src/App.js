@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import About from "./views/About";
 import Portfolio from "./views/Portfolio";
 import Contact from "./views/Contact";
+import ThankYou from "./views/ThankYou";
 import Union from "./views/Union";
 import Error from "./views/Error";
 import ACreativeCollective from "./views/portfolio-views/ACreativeCollective";
@@ -49,6 +50,7 @@ class App extends Component {
 					<Route path="/portfolio/wheelhousemedia" render={() => <WheelhouseMedia updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path="/portfolio/seniorshowwebsite" render={() => <WinthropSeniorShow updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/contact' render={() => <Contact updateAppClass={ this.updateAppClass.bind(this) } />} />
+					<Route path='/thank-you' render={() => <ThankYou updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route path='/union' render={() => <Union updateAppClass={ this.updateAppClass.bind(this) } />} />
 					<Route component={ Error } />
 				</Switch>
