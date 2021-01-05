@@ -22,12 +22,18 @@ module.exports = {
 				]
 			},
 			{
+			    test: /\.(woff|woff2|ttf|otf)$/,
+			    loader: 'file-loader',
+			    include: [/fonts/],
+			    options: {
+				    name: '[hash].[ext]',
+				    outputPath: 'scss/',
+				    publicPath: url => '../scss/' + url
+			    }
+		    },
+			{
 				test: /\.(jpe?g|png|gif|svg)(\?[a-z0-9=.]+)?$/,
 			    loader: 'url-loader?limit=10000'
-			},
-			{
-				test: /\.(woff|woff2|eot|otf|ttf)(\?[a-z0-9=.]+)?$/,
-			    loader: 'file-loader'
 			},
 			{
 				test: /\.(jpg|png|svg)$/,
@@ -38,7 +44,8 @@ module.exports = {
 	resolve: { extensions: ["*", ".js", ".jsx"] },
 	output: {
 		path: path.resolve(__dirname, "dist/"),
-		filename: "bundle.js"
+		filename: "bundle.js",
+		publicPath: '/'
 	},
 	devServer: {
 		contentBase: path.join(__dirname, "dist/"),
