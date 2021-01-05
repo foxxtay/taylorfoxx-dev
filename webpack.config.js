@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: "./src/index.js",
@@ -22,17 +23,7 @@ module.exports = {
 				]
 			},
 			{
-			    test: /\.(woff|woff2|ttf|otf)$/,
-			    loader: 'file-loader',
-			    include: [/fonts/],
-			    options: {
-				    name: '[hash].[ext]',
-				    outputPath: 'scss/',
-				    publicPath: url => '../scss/' + url
-			    }
-		    },
-			{
-				test: /\.(jpe?g|png|gif|svg)(\?[a-z0-9=.]+)?$/,
+				test: /\.(jpe?g|png|gif|woff|woff2|eot|otf|ttf|svg)(\?[a-z0-9=.]+)?$/,
 			    loader: 'url-loader?limit=10000'
 			},
 			{
@@ -59,6 +50,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 		    favicon: "./src/assets/img/favicon.png",
 		    template: 'public/index.html'
+		}),
+		new CopyWebpackPlugin({
+			patterns: [
+				{ from: 'public/fonts', to: 'fonts' }
+			]
 		})
 	]
 };
