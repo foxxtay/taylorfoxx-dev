@@ -55,8 +55,13 @@ p {
 	}
 }
 
+h1, h2, p, li {
+	cursor: default;
+}
+
 a {
 	color: #333;
+	cursor: pointer !important;
 }
 
 .wow {

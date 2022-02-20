@@ -11,7 +11,7 @@ class RecentWork extends Component {
 	render() {
 		return(
 			<section className="RecentWork">
-				<h1 className="wow fadeIn">Recent work</h1>
+				<h1 className="wow fadeIn">Selected work</h1>
 				<div className="portfolio-links">
 					{ portfolioLinks }
 				</div>

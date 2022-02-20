@@ -10,8 +10,13 @@ export const links = [
 		exact: false
 	},
 	{
+		title: "EXP",
+		slug: "/exp",
+		exact: false
+	},
+	{
 		title: "Contact",
 		slug: "/contact",
 		exact: false
-	},
+	}
 ];

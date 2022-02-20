@@ -1,0 +1,29 @@
+.ExpContent {
+	width: 100vw;
+	height: calc(100vh - 70px);
+	background: #000;
+	position: relative;
+
+	@media #{$break-tablet} {
+		height: calc(100vh - 74px);
+	}
+
+	.content-container {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+	    padding: 25px;
+	    box-sizing: border-box;
+
+	    h1, p {
+	    	color: cyan;
+	    	transition: all .25s ease-in;
+
+	    	&:hover {
+	    		filter: invert(100%);
+	    	}
+	    }
+	}
+}
